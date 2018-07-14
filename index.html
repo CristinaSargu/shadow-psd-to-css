@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.min.css">
+	
+	<title>Shadow PSD to CSS</title>
+</head>
+<body>
+	<header>
+					
+	</header>
+	<section>
+		<div class="working-space">
+			<div class="shadow-working-wrapper">
+				<form action="#" id="validation-form">
+					<div class="shadow-input-block">
+						<label for="1">Blend Mode:</label>
+						<select name="mode" id="01" disabled>
+							<option value="1">Normal</option>
+						</select>
+						<!-- <input type="text" class="shadow-input color-picker validate[custom[color],maxSize[6],minSize[3]]" id="1" value="333"> -->
+						<div class="color-picker color-selector"></div>
+					</div>
+
+					<div class="shadow-input-block">
+						<label for="2">Opacity:</label>
+						<input type="range" class="js-amount-range" value="0" min="0" max="100">
+						<input type="number" value="0" min="0" max="100" class="shadow-input validate[custom[integer],min[0],max[100]]" id="2">
+						<span class="units">%</span>
+					</div>
+
+					<div class="shadow-input-block">
+						<label for="3">Angle:</label>
+						<span class="angle-circel">
+							<span class="angle-circel-radius"></span>
+						</span>
+						<input type="text" class="shadow-input validate[required, custom[integer],min[-360],max[360]]" id="3" value="120">
+						<span class="units">°</span>
+						<input type="checkbox" name="global-light" value="" class="checkbox-elem" checked disabled><span class="global-light-span">Use Global Light</span>
+					</div>
+
+					<div class="shadow-input-block">
+						<label for="4">Distance:</label>
+						<input type="range" class="js-amount-range" value="0" min="0" max="300">
+						<input type="number" value="0" min="0" max="300" class="shadow-input validate[custom[integer],min[0],max[300]]" id="4">
+						<span class="units">px</span>
+					</div>
+
+					<div class="shadow-input-block">
+						<label for="5">Spread:</label>
+						<input type="range" class="js-amount-range" value="0" min="0" max="100">
+						<input type="number" value="0" min="0" max="100" class="shadow-input validate[custom[integer],min[0],max[100]]" id="5">
+						<span class="units">%</span>
+					</div>
+
+					<div class="shadow-input-block">
+						<label for="6">Size:</label>
+						<input type="range" class="js-amount-range" value="0" min="0" max="250">
+						<input type="number" value="0" min="0" max="250" class="shadow-input validate[custom[integer],min[0],max[250]]" id="6">
+						<span class="units">px</span>
+					</div>
+					<span class="generte-shadow js-shadow-generate">
+						<span>Generate</span>
+					</span>
+					<div class="generated-code">
+						
+					</div>
+				</form>
+			</div>
+
+			<div class="rezult-block">
+				<span class="rezult"></span>
+			</div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+
+	
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="rangeslider.min.js"></script>
+	<script src="colorpicker.min.js"></script>
+	<script src="jquery.validationEngine-en.js"></script>
+	<script src="jquery.validationEngine.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

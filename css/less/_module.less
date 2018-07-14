@@ -1,0 +1,224 @@
+.working-space{
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.shadow-working-wrapper{
+	width: 450px;
+	padding: 60px 15px;
+	box-sizing: border-box;
+	background-color: #E8E8E8;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	text-align: left;
+}
+.rezult-block{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 100%;
+	background-image: url(../images/pattern.jpg);
+	background-repeat: repeat;
+	width: 500px;
+	padding: 100px 40px;
+	box-sizing: border-box;
+	text-align: left;
+}
+.shadow-input-block{
+	margin-bottom: 20px;
+	display: block;
+	select{
+		width: 100px;
+	}
+
+	label{
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+		width: 90px;
+		text-align: right;
+		font-size: 14px;
+		color: #343434;
+		font-family: "Arial";
+		margin-right: 10px;
+	}
+	.shadow-input{
+		width: 70px;
+		height: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+		outline: none;
+		padding: 2px 5px;
+		box-sizing: border-box;
+	}
+	.rangeslider--horizontal{
+		height: 5px;
+		width: 150px;
+		display: inline-block;
+		vertical-align: middle;
+		zoom: 1; /* Fix for IE7 */
+		*display: inline; /* Fix for IE7 */
+	}
+
+	.rangeslider__fill{
+		background: #b1b1b1;
+	}
+	.rangeslider__handle{
+		width: 20px;
+		height: 20px;
+
+		&:after{
+			width: 12px;
+			height: 12px;
+		}
+	}
+}
+.color-selector{
+	width: 70px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	background-color: #333;
+	cursor: pointer;
+}
+
+.generte-shadow{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #545454;
+	text-align: center;
+	line-height: 30px;
+	display: block;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	span{
+		font-size: 14px;
+		color: #fff;
+		font-family: "Arial";
+	}
+}
+.generated-code{
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #d8d8d8;
+	border-radius: 3px;
+	display: none;
+}
+
+.rezult{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #80D6FF;
+	display: block;
+	margin: 0 auto;
+}
+
+.units{
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	font-size: 14px;
+	color: #343434;
+	font-family: "Arial";
+}
+.checkbox-elem{
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	margin-right: 10px;
+
+}
+.global-light-span{
+	font-size: 14px;
+	color: #343434;
+	font-family: "Arial";
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+.formError {
+	opacity: 0.9 !important;
+	.formErrorArrow div{
+		background: #D64541;
+	}
+	.formErrorContent{
+		background: #D64541;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-o-border-radius: 3px;
+		font-family: "Arial";
+	}
+}
+
+.property, .property-elems{
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+    color: #0086b3;
+}
+.px-unit{
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 12px;
+    color: #a71d5d;
+}
+
+.angle-circel{
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	background-color: #dedede;
+	margin-right: 10px;
+	position: relative;
+
+	&:before{
+		display: block;
+		position: absolute;
+		content: '';
+		width: 4px;
+		height: 4px;
+		background-color: #6d6d6d;
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		margin-top: -2px;
+		margin-left: -2px;
+	}
+	.angle-circel-radius{
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 1px;
+		top: 50%;
+		margin-top: 0;
+		left: 50%;
+		margin-left: 0px;
+		background-color: #6d6d6d;
+		transition: transform 1s linear;
+		transform-origin: top left;
+		transform-style: preserve-3D;
+		transform: rotate(120deg);
+	}
+}
